@@ -43,6 +43,9 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-green: #008000;
+  --primary-red: #FF0000;
+  --primary-hover-red: #f33501;
 }
 
 body {
@@ -50,8 +53,15 @@ body {
 }
 
 /***************************NavBar**************************/
+nav {
+  z-index: 2;
+}
 .logo{
-  width: 9.25rem;
+  position: absolute;
+  left: 0rem;
+  top: 1.5rem;
+  width: 7.25rem;
+
 }
 
 /*------------------------Menu Links------------------------*/
@@ -85,4 +95,84 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+} 
+
+/*************************** Header **************************/
+
+.header-wraper {
+  position: relative;
+  background: url(webdeveloper.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed" sans-serif;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main-info h1 {
+  color: var(--primary-green);
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+ 
+/*************************** Typed **************************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/*************************** Header Main Offer Button**************************/
+.btn-main-offer {
+  border: 1px solid var(--primary-green);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  z-index: 1;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color:#000000;
+  color: var(--primary-white);
+  transition: 0.3s ease-in-out;
+
+}
+/*************************** Particles **************************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
