@@ -218,6 +218,7 @@ nav ul li {
   height: 40vmin;
   z-index: 1;
   border-radius: 30%;
+  border: 2px solid var(--primary-green)
 }
 
 @media(max-width: 768px) {
