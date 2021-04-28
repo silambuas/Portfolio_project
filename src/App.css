@@ -188,19 +188,14 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condesed" sans-serif;
-  /* position:absolute;
-  top: 0;
-  left: 0;
-  right: 60.0rem;
-  bottom: 100px; */
-  
-  
+
 }
 
 .main-about h1 {
   color: var(--primary-green);
   font-size: 50px;
   font-family: 'Courier New', monospace;
+  
 }
 
 .text1 {
@@ -218,6 +213,13 @@ nav ul li {
   font-size: 25px;
 }
 
+.photo {
+  
+  height: 40vmin;
+  z-index: 1;
+  border-radius: 30%;
+}
+
 @media(max-width: 768px) {
   .main-about h1 {
     font-size: 1.8rem !important;
@@ -230,14 +232,14 @@ nav ul li {
 
   }
   .aboutPage{
-    height: fit-content;
+    height: max-content;
   }
 }
 
 /*************************** Particles **************************/
 .aboutPart {
   position: absolute;
-  height: 70vh;
+  height: 60vh;
   width: 97vw;
   z-index: 1;
 } 
