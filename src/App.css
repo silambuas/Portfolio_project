@@ -171,3 +171,73 @@ nav ul li {
   z-index: 1;
 }
 
+/*************************** About **************************/
+
+.aboutPage {
+  position: relative;
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  height:fit-content;
+  width: fit-content;
+}
+.main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed" sans-serif;
+  /* position:absolute;
+  top: 0;
+  left: 0;
+  right: 60.0rem;
+  bottom: 100px; */
+  
+  
+}
+
+.main-about h1 {
+  color: var(--primary-green);
+  font-size: 50px;
+  font-family: 'Courier New', monospace;
+}
+
+.text1 {
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  display: flex;
+  text-align: justify;
+  align-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 5%;  
+  font-size: 25px;
+}
+
+@media(max-width: 768px) {
+  .main-about h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .text1 {
+    font-size: 1.1rem !important;
+    margin-right: 5%;
+    margin-left: 5%;
+
+  }
+  .aboutPage{
+    height: fit-content;
+  }
+}
+
+/*************************** Particles **************************/
+.aboutPart {
+  position: absolute;
+  height: 70vh;
+  width: 97vw;
+  z-index: 1;
+} 
