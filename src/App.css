@@ -201,7 +201,8 @@ nav ul li {
 .text1 {
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+  border: 2px dotted var(--primary-green);
+  padding: 2% 2% 2% 2%;
   display: flex;
   text-align: justify;
   align-content: center;
@@ -210,7 +211,7 @@ nav ul li {
   margin-right: 30%;
   margin-left: 30%;
   margin-bottom: 5%;  
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .photo {
@@ -228,8 +229,8 @@ nav ul li {
 
   .text1 {
     font-size: 1.1rem !important;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
 
   }
   .aboutPage{
@@ -241,6 +242,6 @@ nav ul li {
 .aboutPart {
   position: absolute;
   height: 60vh;
-  width: 97vw;
+  width: 100%;
   z-index: 1;
 } 
