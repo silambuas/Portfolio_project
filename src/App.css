@@ -97,12 +97,17 @@ nav ul li {
     #CA4246 16.666%, 
     #E16541 16.666%, 
     #E16541 33.333%, 
-    #F18F43 33.333%, 
+    
+    #ffeb75 66.666%,
+    /* #476098 66.666%,
+    #476098 83.333%, */
+    var(--primary-green) 83.333%,
     #F18F43 50%, 
     #8B9862 50%, 
-    #8B9862 66.666%, 
-    #476098 66.666%, 
-    #476098 83.333%, 
+    #8B9862 66.666%,
+    #F18F43 33.333%, 
+     
+     
     #A7489B 83.333%);
   
   /* Set thee background size and repeat properties. */
@@ -116,7 +121,7 @@ nav ul li {
   
   /* Animate the text when loading the element. */
   /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 0.7s ease forwards;
+  animation: rainbow-text-animation-rev 0s ease-out;
 
   cursor: pointer;
 }
@@ -197,15 +202,15 @@ nav ul li {
 }
 .main-info h1 {
   color: var(--primary-green);
-  font-size: 50px;
+  font-size: 3em;
   font-family: 'Courier New', monospace;
 }
  
 /*************************** Typed **************************/
 
 .typed-text {
-  font-size: 2rem;
-  color: var(--primary-white);
+  font-size: 1.7rem;
+  color: #41f0e1;
   text-transform: uppercase;
 }
 
@@ -227,6 +232,7 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   z-index: 1;
+  margin-top: 1%;
 }
 
 .btn-main-offer:hover {
@@ -245,17 +251,9 @@ nav ul li {
 }
 
 /*************************** About **************************/
-#nav-bar{
-  position: fixed;
-  display: flex;
-  width: 100vw;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 .aboutPage {
   position: relative;
-  background-color: #000000;
+  background-color:#000000;
   background-size: cover;
   background-position: center;
   height:fit-content;
@@ -275,30 +273,71 @@ nav ul li {
   color: var(--primary-green);
   font-size: 50px;
   font-family: 'Courier New', monospace;
-  float: left;
+  /* float: left; */
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 3%;
+
   
 }
+
 
 .text1 {
   color: white;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 2px dotted var(--primary-green);
+  border: 2px dotted #099FFF;
   padding: 2% 2% 2% 2%;
   text-align: justify; 
   margin-top: 5%;
-  margin-right: 30%;
-  margin-left: 30%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 5%; 
   font-size: 20px;
+  width: 50%;
+}
+.linkedin{
+  width: 10vw ;
+  height: 3%;
+  /* align-items: baseline; */
+  
+  
+}
+.github{
+  width: 8vw;
+  padding: 1% 1%;
+  
+}
+.alignment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+
 }
 
-.photo {
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 2% 2%;
+  z-index: 4;
   
-  height: 40vmin;
+  
+}
+.text1 h4{
+  color: rgb(237, 212, 64);
+  font-family: 'Original Surfer', cursive;
+}
+.photo {
+  height: 60vmin;
   z-index: 1;
-  border-radius: 30%;
+  border-radius: 50%;
   border: 2px solid var(--primary-green);
-  /* float: right; */
+  margin-left: 5%;
+  
 }
 
 @media(max-width: 768px) {

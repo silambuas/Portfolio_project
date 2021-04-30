@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark" style={{position: "fixed", width: "100vw"}}>
+    <nav className="navbar navbar-expand-lg navbar-light " style={{position: "fixed", width: "100vw", background : "rgba(52,58,64,0.9)"}}>
   <div className="container">
       <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="Logo...." /> </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +21,17 @@ const Navbar = () => {
             <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About Me</a>
+            <a className="nav-link" href="#aboutPage">About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">services</a>
+            <a className="nav-link" href="#">Projects</a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="#">how work</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">portfolio</a>
-          </li>
+          </li> */}
           <li className="nav-item">
             <a className="nav-link" href="#">contacts</a>
           </li>
