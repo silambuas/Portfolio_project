@@ -54,21 +54,29 @@ body {
 
 /***************************NavBar**************************/
 nav {
-  z-index: 2;
+  z-index: 5;
+  position: fixed;
 }
 .logo{
-  position: absolute;
+  position: fixed;
   left: 0rem;
   top: 1.5rem;
   width: 7.25rem;
 
 }
+/* .container {
+  position:fixed;
+  top:0;
+  z-index: 5;
+  /* background: #343A40; 
+} */
 
 /*------------------------Menu Links------------------------*/
 nav a.nav-link {
    
   letter-spacing: 0.0375rem;
   cursor: pointer;
+  
 }
 
 nav ul li {
@@ -78,8 +86,39 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
+  font-size: 1.2em;
+  font-weight: 800;
   border-top: 0.1875rem solid var(--primary-dark);
+  /* Create a conic gradient. */
+  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+  background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(
+    #CA4246 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+  
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.7s ease forwards;
+
+  cursor: pointer;
 }
 
 .navbar-brand {
@@ -95,7 +134,41 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+  animation: rainbow-text-animation 0.5s ease forwards;
 } 
+
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
+
 
 /*************************** Header **************************/
 
@@ -172,7 +245,14 @@ nav ul li {
 }
 
 /*************************** About **************************/
-
+#nav-bar{
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .aboutPage {
   position: relative;
   background-color: #000000;
@@ -195,6 +275,7 @@ nav ul li {
   color: var(--primary-green);
   font-size: 50px;
   font-family: 'Courier New', monospace;
+  float: left;
   
 }
 
@@ -203,14 +284,11 @@ nav ul li {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border: 2px dotted var(--primary-green);
   padding: 2% 2% 2% 2%;
-  display: flex;
-  text-align: justify;
-  align-content: center;
-  align-items: center;
+  text-align: justify; 
   margin-top: 5%;
   margin-right: 30%;
   margin-left: 30%;
-  margin-bottom: 5%;  
+  margin-bottom: 5%; 
   font-size: 20px;
 }
 
@@ -219,7 +297,8 @@ nav ul li {
   height: 40vmin;
   z-index: 1;
   border-radius: 30%;
-  border: 2px solid var(--primary-green)
+  border: 2px solid var(--primary-green);
+  /* float: right; */
 }
 
 @media(max-width: 768px) {
@@ -245,3 +324,6 @@ nav ul li {
   width: 100%;
   z-index: 1;
 } 
+
+
+
