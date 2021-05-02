@@ -37,14 +37,14 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark: rgba(255,255,255,0);
+  --primary-dark: rgba(255, 255, 255, 0);
   --primary-green: #008000;
-  --primary-red: #FF0000;
+  --primary-red: #ff0000;
   --primary-hover-red: #f33501;
 }
 
@@ -57,12 +57,11 @@ nav {
   z-index: 5;
   position: fixed;
 }
-.logo{
+.logo {
   position: fixed;
   left: 0rem;
   top: 1.5rem;
   width: 7.25rem;
-
 }
 /* .container {
   position:fixed;
@@ -73,10 +72,8 @@ nav {
 
 /*------------------------Menu Links------------------------*/
 nav a.nav-link {
-   
   letter-spacing: 0.0375rem;
   cursor: pointer;
-  
 }
 
 nav ul li {
@@ -91,34 +88,31 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-dark);
   /* Create a conic gradient. */
   /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: #CA4246;
-  background-color: #CA4246;
+  background: #ca4246;
+  background-color: #ca4246;
   background: conic-gradient(
-    #CA4246 16.666%, 
-    #E16541 16.666%, 
-    #E16541 33.333%, 
-    
+    #ca4246 16.666%,
+    #e16541 16.666%,
+    #e16541 33.333%,
     #ffeb75 66.666%,
     /* #476098 66.666%,
-    #476098 83.333%, */
-    var(--primary-green) 83.333%,
-    #F18F43 50%, 
-    #8B9862 50%, 
-    #8B9862 66.666%,
-    #F18F43 33.333%, 
-     
-     
-    #A7489B 83.333%);
-  
+    #476098 83.333%, */ var(--primary-green) 83.333%,
+    #f18f43 50%,
+    #8b9862 50%,
+    #8b9862 66.666%,
+    #f18f43 33.333%,
+    #a7489b 83.333%
+  );
+
   /* Set thee background size and repeat properties. */
   background-size: 57%;
   background-repeat: repeat;
-  
+
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  
+  -webkit-text-fill-color: transparent;
+
   /* Animate the text when loading the element. */
   /* This animates it on page load and when hovering out. */
   animation: rainbow-text-animation-rev 0s ease-out;
@@ -130,17 +124,17 @@ nav ul li {
   max-width: 17.25 rem;
   padding: 0 !important;
   height: 6rem !important;
-
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
   animation: rainbow-text-animation 0.5s ease forwards;
-} 
+}
 
 @keyframes rainbow-text-animation {
   0% {
@@ -174,7 +168,6 @@ nav ul li {
   }
 }
 
-
 /*************************** Header **************************/
 
 .header-wraper {
@@ -183,7 +176,6 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 100vh;
-
 }
 
 .main-info {
@@ -193,7 +185,7 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condesed" sans-serif;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -203,9 +195,9 @@ nav ul li {
 .main-info h1 {
   color: var(--primary-green);
   font-size: 3em;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
 }
- 
+
 /*************************** Typed **************************/
 
 .typed-text {
@@ -214,7 +206,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-info h1 {
     font-size: 1.7rem !important;
   }
@@ -237,10 +229,9 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color:#000000;
+  background-color: #000000;
   color: var(--primary-white);
   transition: 0.3s ease-in-out;
-
 }
 /*************************** Particles **************************/
 .tsparticles-canvas-el {
@@ -253,10 +244,10 @@ nav ul li {
 /*************************** About **************************/
 .aboutPage {
   position: relative;
-  background-color:#000000;
+  background-color: #000000;
   background-size: cover;
   background-position: center;
-  height:fit-content;
+  height: fit-content;
   width: fit-content;
 }
 .main-about {
@@ -266,54 +257,45 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condesed" sans-serif;
-
 }
 
 .main-about h1 {
   color: var(--primary-green);
   font-size: 50px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   /* float: left; */
   position: relative;
   margin-top: 10%;
   margin-bottom: 3%;
-
-  
 }
-
 
 .text1 {
   color: white;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: 2px dotted #099FFF;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px dotted #099fff;
   padding: 2% 2% 2% 2%;
-  text-align: justify; 
+  text-align: justify;
   margin-top: 5%;
   margin-right: 5%;
   margin-left: 5%;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
   font-size: 20px;
   width: 50%;
 }
-.linkedin{
-  width: 10vw ;
+.linkedin {
+  width: 10vw;
   height: 3%;
   /* align-items: baseline; */
-  
-  
 }
-.github{
+.github {
   width: 8vw;
   padding: 1% 1%;
-  
 }
 .alignment {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  
-
 }
 
 .social {
@@ -324,12 +306,10 @@ nav ul li {
   margin-right: 25%;
   padding: 2% 2%;
   z-index: 4;
-  
-  
 }
-.text1 h4{
+.text1 h4 {
   color: rgb(237, 212, 64);
-  font-family: 'Original Surfer', cursive;
+  font-family: "Original Surfer", cursive;
 }
 .photo {
   height: 60vmin;
@@ -337,10 +317,9 @@ nav ul li {
   border-radius: 50%;
   border: 2px solid var(--primary-green);
   margin-left: 5%;
-  
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .main-about h1 {
     font-size: 1.8rem !important;
   }
@@ -349,9 +328,8 @@ nav ul li {
     font-size: 1.1rem !important;
     margin-right: 4%;
     margin-left: 4%;
-
   }
-  .aboutPage{
+  .aboutPage {
     height: max-content;
   }
 }
@@ -359,10 +337,72 @@ nav ul li {
 /*************************** Particles **************************/
 .aboutPart {
   position: absolute;
-  height: 60vh;
+  height: 100%;
   width: 100%;
   z-index: 1;
-} 
+}
 
+/*************************** Projects ***************************/
 
+.Main-project {
+  background: #000000;
+  height: max-content;
+  z-index: 1;
+}
 
+.Main-project h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #008000;
+  margin-bottom: 5%;
+  font-family: "Courier New", monospace;
+  z-index: 1;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-list {
+  margin: 3% 7%;
+  border: 2px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 1em;
+  padding: 2%;
+  width: 28rem;
+  z-index: 1;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .Main-project h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .project-list p {
+    font-size: 1.1rem !important;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+}
+
+.projectpart {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+.project-list h4 {
+  color: var(--primary-orange);
+}
+.project-list h6 {
+  color: #535353;
+}
+.project-list:hover {
+  display: grid;
+  grid-template-columns: 100%;
+
+  zoom: 120%;
+}
