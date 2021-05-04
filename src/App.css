@@ -110,7 +110,9 @@ nav ul li {
 
   /* Use the text as a mask for the background. */
   /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
 
   /* Animate the text when loading the element. */
@@ -449,3 +451,15 @@ nav ul li {
 }
 
 /********************************** Contact Me *********************************/
+.mainContact {
+  background: url("../src/contact.jpg") no-repeat;
+  width: 100%;
+  background-position: 50% 200%;
+  background-color: #000000;
+}
+
+/* @media (max-width: 768px) {
+  .mainContact {
+    background-position: center;
+  }
+} */
