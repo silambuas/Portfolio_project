@@ -357,6 +357,7 @@ nav ul li {
     font-size: 1.1rem !important;
     margin-right: 4%;
     margin-left: 4%;
+    width: 90%;
   }
   .aboutPage {
     height: max-content;
