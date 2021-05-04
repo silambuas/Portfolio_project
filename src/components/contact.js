@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "50vh",
     width: "60%",
     display: "flex",
+    flexDirection: "column",
     justifyContent: "space-between",
     alignItems: "center",
     margin: "auto",
@@ -17,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
       width: "90%",
     },
     [theme.breakpoints.down("sm")]: {
-      width: "95%",
-      flexDirection: "column-reverse",
+      width: "70%",
+      flexDirection: "column",
     },
   },
   profile: {
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   infoContainer: {
-    Width: "500px",
+    Width: "100%",
   },
   name: {
     fontSize: "4rem",
@@ -37,7 +38,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "1.2rem",
   },
   input: {
-    width: "500px ",
+    [theme.breakpoints.down("md")]: {
+      width: "80vw",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "70vw",
+    },
+    width: "50vw",
     marginTop: theme.spacing(4),
   },
   button: {
