@@ -324,8 +324,9 @@ nav ul li {
 .para {
   position: relative;
   color: #0ff;
-  margin-top: 25%;
-  margin-left: -33%;
+  margin-top: -10%;
+  margin-left: 7%;
+  font-size: 1em;
   z-index: 0;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

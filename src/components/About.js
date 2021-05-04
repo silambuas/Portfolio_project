@@ -38,24 +38,24 @@ function About() {
         </div>
       </div>
       <div className="social">
+        <p className="para ">GitHub</p>
         <a href="https://github.com/silambuas" target="_blank">
           <div className="text-hover">
             <img className="github" src={github} alt="Github...." />
           </div>
         </a>
-        <p className="para">GitHub</p>
+        <p className="para">LinkedIn</p>
         <a href="https://www.linkedin.com/in/silambarasu-a/" target="_blank">
           <div className="text-hover">
             <img className="linkedin" src={linkedin} alt="Linkedin...." />
           </div>
         </a>
-        <p className="para">LinkedIn</p>
+        <p className="para">Resume</p>
         <a href="#" target="_blank">
           <div className="text-hover">
             <img className="resume" src={download} alt="Resume...." />
           </div>
         </a>
-        <p className="para">Resume</p>
       </div>
     </div>
   );
