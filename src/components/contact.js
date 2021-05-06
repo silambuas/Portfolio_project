@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { TextField, withTheme } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 import { Button } from "react-bootstrap";
 import linkedin from "../linkedin.png";
 import github from "../git1.png";
@@ -35,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   desc: {
     fontSize: "1.2rem",
+    color: "#7d7b7a",
   },
   input: {
     [theme.breakpoints.down("md")]: {
@@ -79,13 +80,26 @@ export default function () {
         </div>
         <div className="social">
           <p className="para ">GitHub</p>
-          <a href="https://github.com/silambuas" target="_blank">
+          <a
+            href="https://github.com/silambuas"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="text-hover">
-              <img className="github" src={github} alt="Github...." />
+              <img
+                className="github"
+                src={github}
+                rel="noreferrer"
+                alt="Github...."
+              />
             </div>
           </a>
           <p className="para">LinkedIn</p>
-          <a href="https://www.linkedin.com/in/silambarasu-a/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/silambarasu-a/"
+            rel="noreferrer"
+            target="_blank"
+          >
             <div className="text-hover">
               <img className="linkedin" src={linkedin} alt="Linkedin...." />
             </div>
@@ -93,6 +107,7 @@ export default function () {
           <p className="para">Resume</p>
           <a
             href="https://drive.google.com/file/d/1cJbNRm8tNQIdJSO5Dh-8HYC0JHt30jpi/view?usp=sharing"
+            rel="noreferrer"
             target="_blank"
           >
             <div className="text-hover">
@@ -102,7 +117,7 @@ export default function () {
         </div>
       </div>
       <div className={classes.container}>
-        <h1>
+        <h1 style={{ color: "#7d7b7a" }}>
           {" "}
           <br /> <br /> Need a Hand !{" "}
         </h1>

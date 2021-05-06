@@ -16,7 +16,7 @@ function Project() {
       <div className="project">
         <div className="project-list">
           <h4>Portfolio Website using ReactJS</h4>
-          <h6>Duration : 45 days (04/2021 - 05/2021)</h6>
+          <h6>Duration : 23 days (04/2021 - 05/2021)</h6>
           <p>
             This portfolio website is created using ReactJS. This is a
             responsive website which supports all devices and also includes
@@ -25,7 +25,7 @@ function Project() {
         </div>
         <div className="project-list">
           <h4>Plant Disease Detection using CNN</h4>
-          <h6>Duration : 1 month (03/2021 - 03/2021)</h6>
+          <h6>Duration : 30 days (03/2021 - 03/2021)</h6>
           <p>
             The overall objective of the system is to detect the infected leaf
             of plant in a short period of time. The proposed system will use a
