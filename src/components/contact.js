@@ -106,7 +106,7 @@ export default function () {
           </a>
           <p className="para">Resume</p>
           <a
-            href="https://drive.google.com/file/d/1cJbNRm8tNQIdJSO5Dh-8HYC0JHt30jpi/view?usp=sharing"
+            href="https://drive.google.com/file/d/1-uVWNsPN7_cypWb8WgfJ_phQxoXLntXE/view?usp=sharing"
             rel="noreferrer"
             target="_blank"
           >
