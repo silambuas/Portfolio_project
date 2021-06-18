@@ -192,7 +192,7 @@ nav ul li {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
 }
 .main-info h1 {
   color: var(--primary-green);
@@ -240,7 +240,7 @@ nav ul li {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 0;
 }
 
 /*************************** About **************************/

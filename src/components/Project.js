@@ -38,7 +38,7 @@ function Project() {
           <h6>Duration : 4 months (10/2020 - 01/2021)</h6>
           <p>
             To delete YouTube spam comments by a bot. So that every day the bot
-            checks the co mments, if the comments are spam comments it
+            checks the comments, if the comments are spam comments it
             automatically deletes that comment from YouTube channel using OAuth
             API.
           </p>
