@@ -106,7 +106,7 @@ export default function () {
           </a>
           <p className="para">Resume</p>
           <a
-            href="https://drive.google.com/file/d/1-uVWNsPN7_cypWb8WgfJ_phQxoXLntXE/view?usp=sharing"
+            href="https://drive.google.com/file/d/1cLXThbMemG9Y-jTtChCFT1ROX_Ov0M9d/view?usp=drivesdk"
             rel="noreferrer"
             target="_blank"
           >
